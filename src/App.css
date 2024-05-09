@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  color: #FFFFFF;
+  background: black;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.div-header {
+  background: #c4c0c0;;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.background-image {
+  width: 100%;
+  height: 450px;
+  background-image: url(../assets/Ashpazi.jpg);
+  background-size: cover;
+  text-align: center;
+  color: green;
+}
+
+button, input {
+  font-size: 2rem;
+  padding: 0.7rem;
+  border: none;
+}
+
+button {
+  width: 10%;
+  background: #c4c0c0;
+  color: #f1ecec;
+}
+
+input {
+  width: 90%;
+  background: #f1ecec;
+}
+
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image {
+  width: 150px;
+}
+
+
