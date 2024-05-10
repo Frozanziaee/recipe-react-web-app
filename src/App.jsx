@@ -1,9 +1,7 @@
-
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './componenets/Header'
 import FoodLists from './componenets/FoodLists'
+import Footer from './componenets/Footer'
 
 function App() {
 
@@ -11,6 +9,7 @@ function App() {
     <>
       <Header />
       <FoodLists />
+      <Footer />
     </>
   )
 }

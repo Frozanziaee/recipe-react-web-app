@@ -77,14 +77,6 @@ export default function FoodIngredient ({meal, handleClose}){
                         <span className="ing-ingredient">{meal.strIngredient8}</span>
                         <span className="ing-measure">{meal.strMeasure8}</span>
                     </li>
-                    <li>
-                        <span className="ing-ingredient">{meal.strIngredient9}</span>
-                        <span className="ing-measure">{meal.strMeasure9}</span>
-                    </li>
-                    <li>
-                        <span className="ing-ingredient">{meal.strIngredient10}</span>
-                        <span className="ing-measure">{meal.strMeasure10}</span>
-                    </li>
                 </ul>
             </div>
         </div>

@@ -49,6 +49,7 @@ button, input {
   width: 10%;
   background: #f64f4f;
   color: #f1ecec;
+  cursor: pointer;
 }
 
 input {
@@ -75,6 +76,7 @@ main {
 }
 .image:hover {
   width: 230px;
+  cursor: pointer;
 }
 .meal-name {
   font-size: 1rem;
@@ -151,6 +153,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   padding: 1em 2em;
+  margin: 0 auto;
 }
 .instraction-title {
   font-size: 1.5rem;
@@ -179,6 +182,24 @@ li::marker {
   color: #f64f4f;
 }
 
+footer{
+  background: #878787;
+  padding: 1em;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.footer-list {
+  list-style: none;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+.footer-icon > .footer-list > a {
+  color: #6f6f6f;
+}
 @media(min-width:768px){
   .desc-image {
     width: 60%;
@@ -193,5 +214,9 @@ li::marker {
   .instraction, .ingredient{
     width: 800px;
     margin: 0 auto;
+  }
+  .footer-list {
+    font-size: 3.5rem;
+    padding: 0 2rem;
   }
 }
