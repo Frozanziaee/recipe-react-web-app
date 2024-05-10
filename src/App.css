@@ -10,8 +10,7 @@ body {
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
-  color: #FFFFFF;
-  background: black;
+  
 }
 
 #root {
@@ -19,7 +18,8 @@ body {
 }
 
 .div-header {
-  background: #c4c0c0;;
+  background: #f64f4f;
+  color: #FFFFFF;
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -33,11 +33,10 @@ body {
 
 .background-image {
   width: 100%;
-  height: 450px;
+  height: 485px;
   background-image: url(../assets/Ashpazi.jpg);
   background-size: cover;
   text-align: center;
-  color: green;
 }
 
 button, input {
@@ -46,23 +45,153 @@ button, input {
   border: none;
 }
 
-button {
+.search-btn {
   width: 10%;
-  background: #c4c0c0;
+  background: #f64f4f;
   color: #f1ecec;
 }
 
 input {
   width: 90%;
   background: #f1ecec;
+  color: #6f6f6f;
 }
 
 .search-result {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+main {
+  background: #eee;
+  border-radius:8px ;
 }
 .image {
-  width: 150px;
+  width: 200px;
+  border-radius: 8px;
+}
+.image:hover {
+  width: 230px;
+}
+.meal-name {
+  font-size: 1rem;
+  max-width: 200px;
+  font-weight: 500;
+  color: #6f6f6f;
+  padding: 0.3em 0.5em;
 }
 
+.location {
+  padding-left: 0.5em;
+  padding-bottom: 1.3em;
+}
+.meal-area {
+  color: #878787;
+  font-size: 0.875rem;
+  padding: 0.1em;
+  margin-top: 0.5rem;
+}
+.icon, .close-btn{
+  color: #f64f4f;
+}
+.close-btn {
+  position: absolute;
+  left: 90%;
+  background: #FFFFFF;
+}
+.close-btn:hover {
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em ;
+  gap: 2em;
+  
+}
 
+.meal-description {
+  margin-top: 0;
+  text-align: start;
+  display: flex;
+  gap: 1em;
+}
+.desc-title{
+  color: #6f6f6f;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.desc-image {
+  width: 90%;
+  border-radius: 10px;
+}
+.meal-desc {
+  color: #878787;
+  font-size: 1rem;
+  padding: 0.2em;
+}
+.link {
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+a:hover{
+  color: #6f6f6f;
+}
+.youtube {
+  margin-right: 0.3em;
+  font-size: 1rem;
+}
+
+.instraction, .ingredient {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+}
+.instraction-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6f6f6f;
+  margin-bottom: .7em;
+}
+
+.instraction-text {
+  color: #878787;
+  align-self: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.ing-ingredient {
+  color: #474747;
+  font-size: 0.875rem;
+}
+.ing-measure {
+  color: #878787;
+  margin-left: 1em;
+  font-size: 0.75rem;
+}
+
+li::marker {
+  color: #f64f4f;
+}
+
+@media(min-width:768px){
+  .desc-image {
+    width: 60%;
+    height: 10%;
+  }
+  .meal-desc, .desc-icon {
+    font-size: 1.5rem;
+  }
+  .desc-title {
+    font-size: 2.3rem;
+  }
+  .instraction, .ingredient{
+    width: 800px;
+    margin: 0 auto;
+  }
+}

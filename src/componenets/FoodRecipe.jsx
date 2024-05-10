@@ -1,25 +1,23 @@
+import { FaLocationDot } from "react-icons/fa6";
 
-export default function FoodRecipe ({meal}){
+export default function FoodRecipe ({meal, handleClick}) {
     return (
-            <main>
-                <img
-                    className='image'
-                    src={meal.strMealThumb}
-                    alt={meal.strMealThumb}
-                />
+        <main>
+            <img
+                className='image'
+                src={meal.strMealThumb}
+                alt={meal.strMealThumb}
+                onClick={handleClick}
+            />
 
-                <div className='meal'>
-                    <h2 className='meal-name'>
-                        {meal.strMeal}
-                    </h2>
-
-                    <p>
-                    <span className='meal-location-ican'>
-                     </span>
-                        {meal.strArea}
-                    </p>
-                </div>
-            </main>
+            <h3 className='meal-name'>
+                {meal.strMeal}
+            </h3>
+            <p className="location">  
+                <span className='icon'><FaLocationDot /></span>
+                <span className="meal-area">{meal.strArea}</span>
+            </p> 
+        </main>   
     ) 
           
 }
