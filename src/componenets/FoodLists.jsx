@@ -45,7 +45,7 @@ export default function FoodLists (){
         </button>
         <input
           type="text"
-          placeholder="Find a recipe"
+          placeholder="Find a recipe..."
           name="food"
           onChange={handleChange}
         />
